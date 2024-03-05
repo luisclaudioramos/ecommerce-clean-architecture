@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "strictPropertyInitialization": false,
+    "module": "commonjs", // required for tests
+    "esModuleInterop": true,
+    "target": "es5",
+    "strict": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "lib": [
+      "es2015",
+      "es2016",
+      "es2017",
+      "dom"
+    ]
+  }
+}

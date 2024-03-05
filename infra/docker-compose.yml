@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=my-pass-ecommerce
+      - POSTGRES_DB=my-ecommerce
+    volumes:
+      - ecommerce-db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  ecommerce-db-data:
